@@ -15,8 +15,8 @@ For advanced users
 
 If you do not already have a preference of terminal, we recommend 
 
-- Windows: MobaXterm, a free SSH client that supports running GUI application on remote machine (X11 forwarding)
-- Mac: Built-in Terminal app, install XQuartz for X11 forwarding
+- Windows: [MobaXterm](https://mobaxterm.mobatek.net/), a free SSH client that supports running GUI application on remote machine (X11 forwarding)
+- Mac: Built-in Terminal app, install [XQuartz](https://www.xquartz.org/) for X11 forwarding
 - Linux: `ssh`, `ssh -X` to enable X11 forwarding
 
 ### Signing In
