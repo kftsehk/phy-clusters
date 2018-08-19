@@ -37,6 +37,12 @@ The NIS password has been changed on mu01.
 ### Compiling your code
 3. Compile your code with icc (Intel C Compiler)
 ```
+[kftse@mu01 ~]$ module avail
+# ...
+----------------------------------------------------- /opt/modulefiles ------------------------------------------------------
+anaconda2                          gmp-6.1.2                          parallel_studio_xe_2015
+anaconda3                          gnu-utils-latest                   parallel_studio_xe_2018
+# ...
 [kftse@mu01 ~]$ module load parallel_studio_xe_2015
 [kftse@mu01 ~]$ which icc
 /opt/intel/composer_xe_2015.1.133/bin/intel64/icc
@@ -70,7 +76,7 @@ cd $PBS_O_WORKDIR
 
 ./test.out  ## You may want to pipe this to another file.
 ```
-6. Submit the job with qsub
+6. Submit the job with `qsub`
 ```
 [kftse@mu01 ~]$ qsub submit.sh
 3715.mu01
@@ -82,7 +88,7 @@ Job id                    Name             User            Time Use S Queue
 7. Wait for result
 
 The status is Queuing, Running, Completed and Exiting
-When completed, you will receive `submit.sh.o[jobid]` and `submit.sh.e[jobid]` for the stdout and stderr of your program
+When completed, you will receive `submit.sh.o[jobid]` and `submit.sh.e[jobid]` for the `stdout` and `stderr` of your program
 ```
 [kftse@mu01 ~]$ qstat
 Job id                    Name             User            Time Use S Queue
@@ -95,7 +101,7 @@ Job id                    Name             User            Time Use S Queue
 [kftse@mu01 ~]$ ls
 submit.sh  submit.sh.e3715  submit.sh.o3715  test.c  test.out
 ```
-8. Use qdel to delete a wrongly submitted job
+8. Use `qdel` to delete a wrongly submitted job
 
 If you delete a Running job, you will still receive .o and .e file containing output generated before the job is deleted.
 ```
