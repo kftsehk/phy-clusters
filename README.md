@@ -119,6 +119,8 @@ For problem report:
 - Briefly describe the problem
 - Attach your job script, `.e[jobid] .o[jobid]` file if available
 
+Account request should go through private email, do not open an issue to request for cluster access 
+
 # Node Allocation policy
 
 - 1 minute = 1 priority point
