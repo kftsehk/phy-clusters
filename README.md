@@ -108,6 +108,17 @@ Job id                    Name             User            Time Use S Queue
 3715.mu01                  submit.sh     kftse                0 C debug
 ```
 
+# Problem reporting
+
+To report a problem of any cluster, or suggest an improvement
+
+- Open a new issue in the [Issues tab](https://github.com/kftsehk/phy-clusters/issues)
+- Tag the appropriate cluster: `cluster1` `cluster2` `cluster3`
+
+For problem report:
+- Briefly describe the problem
+- Attach your job script, `.e[jobid] .o[jobid]` file if available
+
 # Node Allocation policy
 
 - 1 minute = 1 priority point
