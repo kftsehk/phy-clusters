@@ -19,6 +19,8 @@ If you do not already have a preference of terminal, we recommend
 - Mac: Built-in Terminal app, install [XQuartz](https://www.xquartz.org/) for X11 forwarding
 - Linux: `ssh`, `ssh -X` to enable X11 forwarding
 
+You will be using Linux, if you are new to Linux, [this linux command cheatsheet](https://github.com/kftsehk/phy-clusters/wiki/Linux-commands) shows how to do some common operations, you will need these commands everyday.
+
 ### Signing In
 1. ssh cluster and login with your username and password
 2. Change your password with "yppasswd"
