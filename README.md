@@ -10,6 +10,7 @@ For advanced users
 - Environment-modules: Used to load (probably) everything else you need
 - Anaconda3: For python users
 - Your contribution: _Highly welcomed and valued_
+- [FAQ](https://github.com/kftsehk/phy-clusters/wiki/FAQ)
  
 # Tutorial
 
