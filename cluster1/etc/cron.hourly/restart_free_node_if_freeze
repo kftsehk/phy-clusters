@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# TODO: Insert IDRAC username password
+USERNAME=
+PASSWORD=
+
+for i in `pbsnodes | grep "state = free" -B 1 | grep z`
+do
+  timeout 10 ssh $i false
+  [[ $? == 124 ]] && ipmitool -I lan -H ipmi-$i.idrac -U $USERNAME -P $PASSWORD power cycle
+done
