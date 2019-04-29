@@ -1,7 +1,3 @@
-# Welcome
-
-This is a brief introduction to department cluster usage. Please read the tutorial section, and also [wiki](https://github.com/kftsehk/phy-clusters/wiki) pages carefully. I hope that will help you get started.
-
 # TL;DR
 
 For advanced users
@@ -9,9 +5,24 @@ For advanced users
 - Torque PBS: The job queue
 - Environment-modules: Used to load (probably) everything else you need
 - Anaconda3: For python users
-- Your contribution: _Highly welcomed and valued_
+- Intel compiler: Version 2015 (Cluster licensed) / 2018 (BYOL) / 2019 (Highly NOT recommended)
 - [FAQ](https://github.com/kftsehk/phy-clusters/wiki/FAQ)
- 
+- [Wiki Pages](https://github.com/kftsehk/phy-clusters/wiki)
+- Your contribution: _Highly welcomed and valued_
+
+# Problem reporting
+
+To report a problem of any cluster, or suggest an improvement
+
+- Open a new issue in the [Issues tab](https://github.com/kftsehk/phy-clusters/issues)
+- Tag the appropriate cluster: `cluster1` `cluster2` `cluster3`
+
+For problem report:
+- Briefly describe the problem
+- Attach your job script, `.e[jobid] .o[jobid]` file if available
+
+Account request should go through private email, do not open an issue to request for cluster access
+
 # Tutorial
 
 If you do not already have a preference of terminal, we recommend 
@@ -117,28 +128,23 @@ Job id                    Name             User            Time Use S Queue
 3715.mu01                  submit.sh     kftse                0 C debug
 ```
 
-# Problem reporting
+# Advanced Use Cases
 
-To report a problem of any cluster, or suggest an improvement
+### Submitting Many Similar Jobs
+Example Uses:
+- Submit many jobs of the same program, different parameters
+- Submit the same script, running in different folder named sequentially
 
-- Open a new issue in the [Issues tab](https://github.com/kftsehk/phy-clusters/issues)
-- Tag the appropriate cluster: `cluster1` `cluster2` `cluster3`
+Modify your script to run differently depends on the env parameter `$PBS_ARRAYID` and submit with `qsub -t 1-N`
 
-For problem report:
-- Briefly describe the problem
-- Attach your job script, `.e[jobid] .o[jobid]` file if available
+Note:
+- 10 idle job rule still applies, and each sub-job within an array job count as ONE job
 
-Account request should go through private email, do not open an issue to request for cluster access 
+[Documentation](http://docs.adaptivecomputing.com/torque/4-1-4/help.htm#topics/2-jobs/multiJobSubmission.htm)
 
-# Node Allocation policy
+# Resource Overview
 
-- 1 minute = 1 priority point
-- Max. 10 jobs from each user receive priority point
-- Queue priority: a) bigmem + 2880, b) long - 2880
-- User and group priority will be adjusted according to last 14-day usage, i.e. high usage users and groups will have a lower initial priority
-- Reservation can be requested in advance
-
-# Available resources
+## Computing Resources
 
 Note:
 - 1 Point of computing capability ~ Practically 16-20 GFlops
@@ -184,3 +190,11 @@ long | 256G | 7d | 12
 
 Remark:
 - Submit job on _head_
+
+## Queue Policy
+- 1 minute = 1 priority point
+- Max. 10 jobs from each user receive priority point
+- Queue priority: a) bigmem + 2880, b) long - 2880
+- User and group priority will be adjusted according to last 14-day usage, i.e. high usage users and groups will have a lower initial priority
+- Reservation can be requested in advance
+- Paying research groups has higher priority (not listed here)
