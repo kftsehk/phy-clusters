@@ -1,7 +1,7 @@
 # TL;DR
 
 For advanced users
-
+- Campus network is **REQUIRED**, if outside campus, use VPN
 - Torque PBS: The job queue
 - Environment-modules: Used to load (probably) everything else you need
 - Anaconda3: For python users
