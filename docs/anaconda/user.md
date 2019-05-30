@@ -60,11 +60,11 @@ mkl | 2019.3 | 199
 ## Basics
 To activate an environment
 ```
-conda activate <env-name
+conda activate <env-name>
 ```
 To deactivate an environment
 ```
-conda activate
+conda deactivate
 ```
 
 ## Install your own package
