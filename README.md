@@ -157,8 +157,8 @@ Note:
 Queue | Memory | Time Limit | Max # nodes 
 ---|---|---|---
 debug | 32G | 30m | 2
-normal | 32G | 2d | 43
-bigmem | 64G | 2d | 4
+normal | 32G | 2d | 42
+bigmem | 64G | 2d | 7
 long | 32G | 7d | 4
 
 
