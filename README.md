@@ -142,6 +142,12 @@ Note:
 
 [Documentation](http://docs.adaptivecomputing.com/torque/4-1-4/help.htm#topics/2-jobs/multiJobSubmission.htm)
 
+### Using SSL and Git
+
+We recommend you to `conda activate` and use internet access within this environment to work around issues such as
+- Outdated SSL certificate
+- Too old version of git
+
 # Resource Overview
 
 ## Computing Resources
