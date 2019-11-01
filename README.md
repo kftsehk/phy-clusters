@@ -4,7 +4,7 @@ For advanced users
 - Campus network is **REQUIRED**, if outside campus, use VPN
 - Torque PBS: The job queue
 - Environment-modules: Used to load (probably) everything else you need
-- Anaconda3: For python users
+- Anaconda3: Recommended for both python and non-python users
 - Intel compiler: Version 2015 (Cluster licensed) / 2018 (BYOL) / 2019 (Highly NOT recommended)
 - [FAQ](https://github.com/kftsehk/phy-clusters/wiki/FAQ)
 - [Wiki Pages](https://github.com/kftsehk/phy-clusters/wiki)
